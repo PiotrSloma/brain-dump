@@ -17,6 +17,9 @@
 			}
 		}
 	},
+	"files": {
+		"includes": ["**", "!.claude"]
+	},
 	"formatter": {
 		"enabled": true
 	},

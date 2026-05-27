@@ -300,15 +300,15 @@ npm run typecheck && npm run check
 
 #### Automated
 
-- [ ] 1.1 `npm install` completes without errors
-- [ ] 1.2 `npm run typecheck` passes with no new errors
-- [ ] 1.3 `npm run check` passes
-- [ ] 1.4 `src/auth.ts` and `src/app/api/auth/[...nextauth]/route.ts` exist
+- [x] 1.1 `npm install` completes without errors — 7304ab2
+- [x] 1.2 `npm run typecheck` passes with no new errors — 7304ab2
+- [x] 1.3 `npm run check` passes — 7304ab2
+- [x] 1.4 `src/auth.ts` and `src/app/api/auth/[...nextauth]/route.ts` exist — 7304ab2
 
 #### Manual
 
-- [ ] 1.5 `curl -s http://localhost:3000/api/auth/providers` returns credentials JSON
-- [ ] 1.6 `npm run dev` starts without errors
+- [x] 1.5 `curl -s http://localhost:3000/api/auth/providers` returns credentials JSON — 7304ab2
+- [x] 1.6 `npm run dev` starts without errors — 7304ab2
 
 ### Phase 2: Login Page + Home Shell
 

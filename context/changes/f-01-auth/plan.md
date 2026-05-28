@@ -314,15 +314,15 @@ npm run typecheck && npm run check
 
 #### Automated
 
-- [ ] 2.1 `npm run typecheck` passes
-- [ ] 2.2 `npm run check` passes
-- [ ] 2.3 `src/app/login/page.tsx` exists
+- [x] 2.1 `npm run typecheck` passes
+- [x] 2.2 `npm run check` passes
+- [x] 2.3 `src/app/login/page.tsx` exists
 
 #### Manual
 
-- [ ] 2.4 Login form renders at `/login`
-- [ ] 2.5 Wrong credentials show inline error (no redirect)
-- [ ] 2.6 Correct credentials redirect to `/` with email shown
+- [x] 2.4 Login form renders at `/login`
+- [x] 2.5 Wrong credentials show inline error (no redirect)
+- [x] 2.6 Correct credentials redirect to `/` with email shown
 
 ### Phase 3: Route Protection + tRPC + Demo Cleanup
 

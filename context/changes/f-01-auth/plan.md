@@ -314,28 +314,28 @@ npm run typecheck && npm run check
 
 #### Automated
 
-- [x] 2.1 `npm run typecheck` passes
-- [x] 2.2 `npm run check` passes
-- [x] 2.3 `src/app/login/page.tsx` exists
+- [x] 2.1 `npm run typecheck` passes — 7dc40a1
+- [x] 2.2 `npm run check` passes — 7dc40a1
+- [x] 2.3 `src/app/login/page.tsx` exists — 7dc40a1
 
 #### Manual
 
-- [x] 2.4 Login form renders at `/login`
-- [x] 2.5 Wrong credentials show inline error (no redirect)
-- [x] 2.6 Correct credentials redirect to `/` with email shown
+- [x] 2.4 Login form renders at `/login` — 7dc40a1
+- [x] 2.5 Wrong credentials show inline error (no redirect) — 7dc40a1
+- [x] 2.6 Correct credentials redirect to `/` with email shown — 7dc40a1
 
 ### Phase 3: Route Protection + tRPC + Demo Cleanup
 
 #### Automated
 
-- [ ] 3.1 `npm run typecheck` passes with no errors
-- [ ] 3.2 `npm run check` passes
-- [ ] 3.3 `middleware.ts` exists at project root
+- [x] 3.1 `npm run typecheck` passes with no errors — bf146db
+- [x] 3.2 `npm run check` passes — bf146db
+- [x] 3.3 `middleware.ts` exists at project root — bf146db
 
 #### Manual
 
-- [ ] 3.4 Incognito window to `/` redirects to `/login`
-- [ ] 3.5 Login works end-to-end after middleware active
-- [ ] 3.6 `/api/auth/providers` accessible without auth
-- [ ] 3.7 Vercel env vars added (AUTH_SECRET, ADMIN_EMAIL, ADMIN_PASSWORD_HASH, NEXTAUTH_URL)
-- [ ] 3.8 Production deploy works with auth
+- [x] 3.4 Incognito window to `/` redirects to `/login` — bf146db
+- [x] 3.5 Login works end-to-end after middleware active — bf146db
+- [x] 3.6 `/api/auth/providers` accessible without auth — bf146db
+- [x] 3.7 Vercel env vars added (AUTH_SECRET, ADMIN_EMAIL, ADMIN_PASSWORD_HASH, NEXTAUTH_URL)
+- [x] 3.8 Production deploy works with auth

@@ -1,9 +1,9 @@
 ---
 id: f-01-auth
 title: Auth Scaffold (F-01)
-status: implementing
+status: implemented
 created: 2026-05-27
-updated: 2026-05-27
+updated: 2026-05-28
 roadmap_ref: F-01
 blocks: S-01, S-02, S-03, S-04
 ---

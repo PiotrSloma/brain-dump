@@ -174,11 +174,11 @@ Push the new schema to the live Turso database. Requires the `.env` file to have
 
 #### Automated
 
-- [ ] 1.1 `npm run typecheck` passes
-- [ ] 1.2 `npm run check` passes
-- [ ] 1.3 `schema.ts` exports `entries` and `categories`, no `posts`
-- [ ] 1.4 `src/server/api/routers/post.ts` deleted
-- [ ] 1.5 `src/app/_components/post.tsx` deleted
+- [x] 1.1 `npm run typecheck` passes
+- [x] 1.2 `npm run check` passes
+- [x] 1.3 `schema.ts` exports `entries` and `categories`, no `posts`
+- [x] 1.4 `src/server/api/routers/post.ts` deleted
+- [x] 1.5 `src/app/_components/post.tsx` deleted
 
 #### Manual
 

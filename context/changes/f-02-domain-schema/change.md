@@ -1,7 +1,7 @@
 ---
 id: f-02-domain-schema
 title: Domain Schema
-status: planned
+status: implementing
 created: 2026-05-28
 updated: 2026-05-28
 ---

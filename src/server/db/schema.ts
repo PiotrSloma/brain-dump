@@ -1,27 +1,37 @@
-// Example model schema from the Drizzle docs
-// https://orm.drizzle.team/docs/sql-schema-declaration
-
 import { sql } from "drizzle-orm";
 import { index, sqliteTableCreator } from "drizzle-orm/sqlite-core";
 
-/**
- * This is an example of how to use the multi-project schema feature of Drizzle ORM. Use the same
- * database instance for multiple projects.
- *
- * @see https://orm.drizzle.team/docs/goodies#multi-project-schema
- */
 export const createTable = sqliteTableCreator((name) => `brain-dump_${name}`);
 
-export const posts = createTable(
-	"post",
+export const categories = createTable(
+	"category",
 	(d) => ({
 		id: d.integer({ mode: "number" }).primaryKey({ autoIncrement: true }),
-		name: d.text({ length: 256 }),
+		userId: d.text().notNull(),
+		name: d.text({ length: 100 }).notNull(),
+		createdAt: d
+			.integer({ mode: "timestamp" })
+			.default(sql`(unixepoch())`)
+			.notNull(),
+	}),
+	(t) => [index("category_user_idx").on(t.userId)],
+);
+
+export const entries = createTable(
+	"entry",
+	(d) => ({
+		id: d.integer({ mode: "number" }).primaryKey({ autoIncrement: true }),
+		userId: d.text().notNull(),
+		content: d.text().notNull(),
+		categoryId: d.integer({ mode: "number" }).references(() => categories.id),
 		createdAt: d
 			.integer({ mode: "timestamp" })
 			.default(sql`(unixepoch())`)
 			.notNull(),
 		updatedAt: d.integer({ mode: "timestamp" }).$onUpdate(() => new Date()),
 	}),
-	(t) => [index("name_idx").on(t.name)],
+	(t) => [
+		index("entry_user_idx").on(t.userId),
+		index("entry_category_idx").on(t.categoryId),
+	],
 );

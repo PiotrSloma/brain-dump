@@ -174,23 +174,23 @@ Push the new schema to the live Turso database. Requires the `.env` file to have
 
 #### Automated
 
-- [x] 1.1 `npm run typecheck` passes
-- [x] 1.2 `npm run check` passes
-- [x] 1.3 `schema.ts` exports `entries` and `categories`, no `posts`
-- [x] 1.4 `src/server/api/routers/post.ts` deleted
-- [x] 1.5 `src/app/_components/post.tsx` deleted
+- [x] 1.1 `npm run typecheck` passes — cda7f6b
+- [x] 1.2 `npm run check` passes — cda7f6b
+- [x] 1.3 `schema.ts` exports `entries` and `categories`, no `posts` — cda7f6b
+- [x] 1.4 `src/server/api/routers/post.ts` deleted — cda7f6b
+- [x] 1.5 `src/app/_components/post.tsx` deleted — cda7f6b
 
 #### Manual
 
-- [ ] 1.6 `npm run dev` starts without console errors
+- [x] 1.6 `npm run dev` starts without console errors — cda7f6b
 
 ### Phase 2: DB Push
 
 #### Automated
 
-- [ ] 2.1 `npm run db:push` exits 0
+- [x] 2.1 `npm run db:push` exits 0
 
 #### Manual
 
-- [ ] 2.2 Drizzle Studio shows `brain-dump_category` and `brain-dump_entry`
-- [ ] 2.3 `brain-dump_post` table is gone
+- [x] 2.2 Drizzle Studio shows `brain-dump_category` and `brain-dump_entry`
+- [x] 2.3 `brain-dump_post` table is gone

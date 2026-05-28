@@ -1,7 +1,7 @@
 ---
 id: s-01-capture-view
 title: Capture + Instant View (S-01)
-status: implementing
+status: implemented
 created: 2026-05-28
 updated: 2026-05-28
 roadmap_ref: S-01

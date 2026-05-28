@@ -184,25 +184,25 @@ Replace the bare home shell from F-01 Phase 2 with the real capture UI. `page.ts
 
 #### Automated
 
-- [x] 1.1 `npm run typecheck` passes
-- [x] 1.2 `npm run check` passes
-- [x] 1.3 `src/server/api/routers/entries.ts` exists and exports `entriesRouter`
-- [x] 1.4 `src/trpc/server.ts` contains no `@ts-expect-error`
+- [x] 1.1 `npm run typecheck` passes — 762d836
+- [x] 1.2 `npm run check` passes — 762d836
+- [x] 1.3 `src/server/api/routers/entries.ts` exists and exports `entriesRouter` — 762d836
+- [x] 1.4 `src/trpc/server.ts` contains no `@ts-expect-error` — 762d836
 
 ### Phase 2: Capture + Feed UI
 
 #### Automated
 
-- [ ] 2.1 `npm run typecheck` passes
-- [ ] 2.2 `npm run check` passes
-- [ ] 2.3 `src/app/_components/capture-feed.tsx` exists
+- [x] 2.1 `npm run typecheck` passes
+- [x] 2.2 `npm run check` passes
+- [x] 2.3 `src/app/_components/capture-feed.tsx` exists
 
 #### Manual
 
-- [ ] 2.4 `npm run dev` starts without console errors
-- [ ] 2.5 Home page shows textarea + empty state
-- [ ] 2.6 Enter submits, entry appears instantly (optimistic)
-- [ ] 2.7 Shift+Enter inserts newline, does not submit
-- [ ] 2.8 Entry shows content, "nieprzypisana" chip, timestamp
-- [ ] 2.9 After page refresh entry is still present (persisted)
-- [ ] 2.10 Simulated error: textarea restores text, inline error shown
+- [x] 2.4 `npm run dev` starts without console errors
+- [x] 2.5 Home page shows textarea + empty state
+- [x] 2.6 Enter submits, entry appears instantly (optimistic)
+- [x] 2.7 Shift+Enter inserts newline, does not submit
+- [x] 2.8 Entry shows content, "nieprzypisana" chip, timestamp
+- [x] 2.9 After page refresh entry is still present (persisted)
+- [x] 2.10 Simulated error: textarea restores text, inline error shown
